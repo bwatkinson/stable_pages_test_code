@@ -1,0 +1,4 @@
+*.o
+*.txt
+*.swp
+stable_pages_test
