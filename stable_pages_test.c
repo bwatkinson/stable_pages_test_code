@@ -193,7 +193,7 @@ int main(int argc, char *argv[])
 
 	/* Putting known data pattern in buffer */
 	while (left) {
-		size_t amt = MIN(sizeof (datapattern), left);
+		size_t amt = MIN(strlen(datapattern), left);
 		memcpy(&buf[offset], datapattern, amt);		
 		offset += amt;
 		left -= left;
