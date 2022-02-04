@@ -196,7 +196,7 @@ int main(int argc, char *argv[])
 		size_t amt = MIN(strlen(datapattern), left);
 		memcpy(&buf[offset], datapattern, amt);		
 		offset += amt;
-		left -= left;
+		left -= amt;
 	}
 
 	
